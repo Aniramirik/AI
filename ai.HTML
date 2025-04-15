@@ -81,7 +81,7 @@
     async function loadModel() {
       progressContainer.style.display = 'block'; // Show progress bar
       try {
-        model = await tf.loadLayersModel('http://127.0.0.1:5500/model.json', {
+        model = await tf.loadLayersModel('model.json', {
           onProgress: updateProgressBar
         });
         console.log('Model Loaded!');
